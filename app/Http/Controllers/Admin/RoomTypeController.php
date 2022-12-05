@@ -159,7 +159,7 @@ class RoomTypeController extends AdminController
      * @param  int $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($id, $room_id)
     {
         $room_type = RoomType::find($id);
         $room = Room::find($room_id);
