@@ -22,7 +22,7 @@ class ReviewController extends AdminController
      */
     public function index()
     {
-        $reviews = Review::orderBy($id)->get();
+        $reviews = Review::orderBy('id')->get();
         return view('admin.review.view')->with('reviews', $reviews);
     }
 
