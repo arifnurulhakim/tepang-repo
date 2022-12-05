@@ -22,7 +22,7 @@ class ReviewController extends AdminController
      */
     public function index()
     {
-        $reviews = Review::orderByRaw("FIELD(approval_status , 'pending', 'rejected', 'approved') ASC")->get();
+        $reviews = Review::orderBy($id)->get();
         return view('admin.review.view')->with('reviews', $reviews);
     }
 
