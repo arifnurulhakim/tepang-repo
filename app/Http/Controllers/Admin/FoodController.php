@@ -65,6 +65,7 @@ class FoodController extends AdminController
         $food = new Food();
         $food->name = $request->input('name');
         $food->price = $request->input('price');
+        $food->type = $request->input('type');
         $food->description = $request->input('description');
         $food->status = $request->input('status');
 
@@ -127,6 +128,7 @@ class FoodController extends AdminController
 
         $food->name = $request->input('name');
         $food->price = $request->input('price');
+        $food->type = $request->input('type');
         $food->description = $request->input('description');
         $food->status = $request->input('status');
 
