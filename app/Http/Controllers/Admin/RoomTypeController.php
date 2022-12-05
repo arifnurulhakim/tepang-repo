@@ -159,17 +159,11 @@ class RoomTypeController extends AdminController
      * @param  int $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id, $room_id)
+    public function destroy($id)
     {
-        $room_type = RoomType::find($id);
-        $room = Room::find($room_id);
-
-        // Delete rooms
-        foreach ($room_type->room as $room) {
+        $room_type = RoomType::find($id);  
             foreach ($room->room_bookings as $booking) {
                 $booking->delete();
-            }
-            $room->delete();
         }
 
         // Delete images
