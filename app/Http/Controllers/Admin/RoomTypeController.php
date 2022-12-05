@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Model\Facility;
 use App\Model\RoomType;
+use App\Model\Room;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
@@ -161,7 +162,7 @@ class RoomTypeController extends AdminController
     public function destroy($id)
     {
         $room_type = RoomType::find($id);
-        $room = Room::findOrFail($room_id);
+        $room = Room::find($room_id);
 
         // Delete rooms
         foreach ($room_type->room as $room) {
