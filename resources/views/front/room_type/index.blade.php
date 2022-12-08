@@ -6,13 +6,13 @@
         <div class="container">
             <div class="row">
                 <div class="page-head">
-                    <h2>Room Types</h2>
+                    <h2>Cafe</h2>
                     <div class="head-title">
                         <div class="hl-1"></div>
                         <div class="hl-2"></div>
                         <div class="hl-3"></div>
                     </div>
-                    <p>All available hotel rooms and suites are listed below</p>
+                    <p>Semua cafe dan fasilitas tersedia tercantum di bawah ini</p>
                 </div>
 
             @forelse($room_types as $room_type)
@@ -77,7 +77,7 @@
                     </div>
                     <!--ROOM PRICE-->
                     <div class="r4 r-com">
-                        <p>Price for 1 night</p>
+                        <p>Minimal Book</p>
 
                         <p>
                             <span class="room-price-1">{{ config('app.currency').$room_type->discountedPrice}}</span>
@@ -85,7 +85,7 @@
                             <span class="room-price">{{ config('app.currency').$room_type->cost_per_day }}</span>
                             @endif
                         </p>
-                        <p>Non Refundable</p>
+                        <p>Tidak bisa dikembalikan</p>
                     </div>
                     <!--ROOM BOOKING BUTTON-->
                     <div class="r5 r-com"> <a href="{{url('/room_type/'.$room_type->id)}}" class="inn-room-book">Book</a> </div>

@@ -13,19 +13,19 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
-    'phone_number' => env('PHONE_NUMBER', '977-9866893439'),
-    'email' => env('EMAIL', ''),
+    'name' => env('APP_NAME', 'Tepang'),
+    'phone_number' => env('PHONE_NUMBER', '081297980756'),
+    'email' => env('EMAIL', 'Tepangkeun@gmail.com'),
     'website' => env('WEBSITE', ''),
     'video' => env('VIDEO', ''),
-    'address' => env('ADDRESS', ''),
+    'address' => env('ADDRESS', 'Garut Jalan Maju Panjang 1118'),
     'facebook' => env('FACEBOOK', '#'),
     'google' => env('GOOGLE', '#'),
     'twitter' => env('TWITTER', '#'),
     'instagram' => env('INSTAGRAM', '#'),
     'latitude' => env('MAP_LATITUDE', '#'),
     'longitude' => env('MAP_LONGITUDE', '#'),
-    'currency' => env('CURRENCY', 'Rs. '),
+    'currency' => env('CURRENCY', 'Rp. '),
 
     'vat_percentage' => env('VAT_PERCENTAGE', '13'),
     'service_charge_percentage' => env('SERVICE_CHARGE_PERCENTAGE', '10'),
