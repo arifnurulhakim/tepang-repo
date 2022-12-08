@@ -78,7 +78,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label>Avatar</label>
+                                        <label>Foto Profile</label>
                                         <input type="file" name="avatar" class="form-control border-input">
                                     </div>
                                 </div>

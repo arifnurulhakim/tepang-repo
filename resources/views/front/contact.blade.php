@@ -6,7 +6,7 @@
         <div class="container">
             <div class="row">
                 <h4>Contact Us</h4>
-                <p>Contact us using any of the following mediums.</p>
+                <p>Hubungi kami menggunakan salah satu media berikut.</p>
                 <p> </p>
                 <ul>
                     <li><a href="#">Home</a>
@@ -27,14 +27,14 @@
                         <div class="hl-2"></div>
                         <div class="hl-3"></div>
                     </div>
-                    <p>Contact us for any queries and help regarding our hotel and system.</p>
+                    <p>Hubungi kami untuk pertanyaan dan bantuan terkait Tepang dan sistem kami.</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-3 col-sm-6 col-xs-12 new-con">
-                    <h2>{{ config('app.name') }} <span>Booking</span></h2>
-                    <p>This web application provides Infos, Ratings and Photos of our hotel. Make your Hotel Reservation cheap.</p>
-                    <p>The top-rated hotel booking services.</p>
+                    <h2> Tepang <span>Booking</span></h2>
+                    <p>Aplikasi web ini menyediakan Info, Peringkat, dan Foto Cafe kami. Jadikan Reservasi Cafe Anda murah.</p>
+                    <p>Layanan pemesanan cafe dengan peringkat teratas.</p>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12 new-con"> <img src="{{ asset("front/images/icon/20.png") }}" alt="">
                     <h4>Address</h4>

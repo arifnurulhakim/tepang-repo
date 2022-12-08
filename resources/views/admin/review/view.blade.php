@@ -13,8 +13,8 @@
                                 <thead>
                                 <th data-field="sn" class="text-center">S.N.</th>
                                 <th data-field="user" class="text-center">User</th>
-                                <th data-field="room_type" class="text-center">Room Type</th>
-                                <th data-field="room_number" data-visible="false" class="text-center">Room Number</th>
+                                <th data-field="room_type" class="text-center">Cafe</th>
+                                <th data-field="room_number" data-visible="false" class="text-center">Cafe number</th>
                                 <th data-field="review">Review</th>
                                 <th data-field="rating">Rating</th>
                                 <th data-field="approval_status" data-sortable="true">Status</th>

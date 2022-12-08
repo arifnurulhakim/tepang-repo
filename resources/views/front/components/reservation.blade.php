@@ -17,7 +17,7 @@
             </div>
             <div class="foot-com foot-2">
                 <h5>Phone: {{ config('app.phone_number', '977-9866893439') }}</h5> </div>
-            <div class="foot-com foot-3"><a class="waves-effect waves-light" href="{{'/room_type'}}">Book Room</a> </div>
+            <div class="foot-com foot-3"><a class="waves-effect waves-light" href="{{'/room_type'}}">Book Sekarang</a> </div>
         </div>
     </div>
 </div>

@@ -5,11 +5,11 @@
         <table>
             <thead>
             <tr>
-                <th>Room Number</th>
-                <th>Room</th>
-                <th>Arrived Date</th>
+                <th>Nomer Antrian</th>
+                <th>Cafe</th>
+                <th>Tanggal Tiba</th>
                 <th>Booking Status</th>
-                <th>Review Approval Status</th>
+                <th>Tinjau Status Persetujuan</th>
             </tr>
             </thead>
             <tbody>
@@ -48,7 +48,7 @@
         {{ Form::hidden('_method', 'POST') }}
         {{ csrf_field() }}
         <div>
-            <label class="col s4">Review</label>
+            <label class="col s4">Tinjauan</label>
             <div class="input-field col s8">
                 <textarea name="review"
                           class="review-textarea validate">@if($room_booking->review()->exists()){{ $room_booking->review->review }}@endif</textarea>

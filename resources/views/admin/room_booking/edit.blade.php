@@ -45,11 +45,11 @@
                                         <label>Status</label>
                                         <select name="payment" id="payment" class="form-control">
                                             <option value="1"
-                                                    @if ($room_booking->payment == '1') selected="selected" @endif>Paid
+                                                    @if ($room_booking->payment == '1') selected="selected" @endif>Di Bayar
                                             </option>
                                             <option value="0"
                                                     @if ($room_booking->payment == '0') selected="selected" @endif>
-                                                Not Paid
+                                                Belum Di Bayar
                                             </option>
                                         </select>
                                     </div>

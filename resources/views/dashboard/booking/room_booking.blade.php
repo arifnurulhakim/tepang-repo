@@ -5,8 +5,8 @@
     <div class="db-cent-3">
         <div class="db-cent-table db-com-table">
             <div class="db-title">
-                <h3><img src="{{ asset("front/images/icon/dbc5.png") }}" alt=""/> My Room Bookings</h3>
-                <p>View all of your hotel room bookings here.</p>
+                <h3><img src="{{ asset("front/images/icon/dbc5.png") }}" alt=""/> My cafe Bookings</h3>
+                <p>Lihat semua pemesanan cafe Anda di sini.</p>
             </div>
             <div class="db-title">
                 @foreach ($errors->all() as $error)

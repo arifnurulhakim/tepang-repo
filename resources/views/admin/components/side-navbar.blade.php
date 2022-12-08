@@ -6,12 +6,12 @@
         -->
         <div class="logo">
             <a href="{{URL::to('/')}}" class="simple-text">
-                {{ config('app.name', 'Laravel') }}
+                {{ config('APP_NAME', 'Tepang') }} 
             </a>
         </div>
         <div class="logo logo-mini">
             <a href="{{URL::to('/admin')}}" class="simple-text">
-                JP
+                |TP|
             </a>
         </div>
         <div class="sidebar-wrapper">

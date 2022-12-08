@@ -19,8 +19,8 @@
                             <table id="bootstrap-table" class="table">
                                 <thead>
                                 <th data-field="sn" class="text-center">S.N.</th>
-                                <th data-field="name" class="text-center">Name</th>
-                                <th data-field="cost_per_day">Cost Per Day</th>
+                                <th data-field="name" class="text-center">Name Cafe</th>
+                                <th data-field="cost_per_day">Biaya</th>
                                 <th data-field="discount_percentage">Discount</th>
                                 <th data-field="max_adult">Max Adult</th>
                                 <th data-field="max_child">Max Child</th>

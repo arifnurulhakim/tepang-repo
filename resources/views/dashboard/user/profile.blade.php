@@ -5,7 +5,7 @@
         <div class="db-cent-table db-com-table">
             <div class="db-title">
                 <h3>Edit Profile</h3>
-                <p>Update your profile details using this form.</p>
+                <p>Perbarui detail profil Anda menggunakan formulir ini.</p>
             </div>
             <div class="book-form inn-com-form db-form">
 

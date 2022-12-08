@@ -5,7 +5,7 @@
             <ul>
                 <li>
                     <a href="{{url('/')}}">
-                        The Royal Hotel
+                        Tepang
                     </a>
                 </li>
                 <li>
@@ -26,7 +26,7 @@
             </ul>
         </nav>
         <div class="copyright pull-right">
-            &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> with Paper Dashboard and Bootstrap
+            &copy; <script>document.write(new Date().getFullYear())</script>, made with Tepang V.2
         </div>
     </div>
 </footer>

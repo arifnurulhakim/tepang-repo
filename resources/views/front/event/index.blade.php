@@ -5,20 +5,20 @@
         <div class="container">
             <div class="row">
                 <div class="page-head">
-                    <h2>All Hotel Events</h2>
+                    <h2>All Promo Events</h2>
                     <div class="head-title">
                         <div class="hl-1"></div>
                         <div class="hl-2"></div>
                         <div class="hl-3"></div>
                     </div>
-                    <p>Events being hosted in our hotel are listed below.</p>
+                    <p>Promo yang diselenggarakan Tepang kami tercantum di bawah ini.</p>
                 </div>
                 <!--TYPOGRAPHY SECTION-->
                 @if(count($events) > 0)
                     <div class="col-md-12">
                         <div class="head-typo typo-com">
-                            <h2>Upcoming Events</h2>
-                            <p>All future events being hosted in our hotel</p>
+                            <h2>Promo Yang Akan Datang</h2>
+                            <p>Semua promo mendatang diselenggarakan di tepang kami</p>
                             @foreach($events as $event)
                             {!! Form::open(array('url' => 'event/'.$event->id.'/book', 'class' => 'col s12')) !!}
                             {{ Form::hidden('_method', 'POST') }}
@@ -53,8 +53,8 @@
                     </div>
                     <div class="col-md-12">
                         <div class="head-typo typo-com">
-                            <h2>Past Events</h2>
-                            <p>All past events hosted in our hotel</p>
+                            <h2>Promo Lalu</h2>
+                            <p>Semua promo sebelumnya diselenggarakan di tepang kami</p>
                             @foreach($events as $event)
                             @continue($event->date > today()->format('Y-m-d') || $event->date == today()->format('Y-m-d'))
                             <!--EVENT-->
@@ -72,7 +72,7 @@
                     </div>
                 @else
 
-                    <h3>No Events are currently being hosted in our hotel.</h3>
+                    <h3>Tidak ada Promo yang saat ini diselenggarakan Tepang kami.</h3>
                 @endif
                 <!--END TYPOGRAPHY SECTION-->
             </div>

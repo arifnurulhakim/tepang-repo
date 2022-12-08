@@ -1,7 +1,7 @@
 @section('dashboard_right')
 
     <div class="db-righ">
-        <h4>Upcoming Bookings</h4>
+        <h4>Pemesanan Mendatang</h4>
         <ul>
             @foreach(\App\Model\RoomBooking::where('user_id', Auth::user()->id)->orderBy('arrival_date', 'desc')->limit('5')->get() as $room_booking)
             <li>

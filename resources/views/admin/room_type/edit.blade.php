@@ -9,7 +9,7 @@
                 <div class="col-md-10 col-md-offset-1">
                     <div class="card">
                         <div class="header">
-                            <h4 class="title">Edit Room Type</h4>
+                            <h4 class="title">Edit Cafe</h4>
                         </div>
                         <div class="content">
                             {!! Form::open(array('url' => 'admin/room_type/'.$room_type->id, 'id' => 'room_type-add-form')) !!}
@@ -19,7 +19,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label>Room Type Name<star>*</star></label>
+                                        <label> Cafe Name<star>*</star></label>
                                         <input type="text" name="name" class="form-control border-input" value="{{ $room_type->name }}">
                                     </div>
                                 </div>
@@ -27,7 +27,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Cost Per Day<star>*</star></label>
+                                        <label>Biaya<star>*</star></label>
                                         <input type="text" name="cost_per_day" class="form-control border-input"
                                                placeholder="Ex: 500" value="{{ $room_type->cost_per_day }}">
                                     </div>
@@ -92,21 +92,21 @@
                                             </label>
                                         </div>
                                     @empty
-                                        <p>Sorry, no facilities available</p>
+                                        <p>Maaf, tidak ada fasilitas yang tersedia</p>
                                     @endforelse
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label>Room Service</label>
+                                        <label>Cafe Service</label>
                                         <select name="room_service" id="room_service" class="form-control">
                                             <option value="1"
-                                                    @if ($room_type->room_service == '1') selected="selected" @endif>Available
+                                                    @if ($room_type->room_service == '1') selected="selected" @endif>Tersedia
                                             </option>
                                             <option value="0"
                                                     @if ($room_type->room_service == '0') selected="selected" @endif>
-                                                Unavailable
+                                                Tidak Tersedia
                                             </option>
                                         </select>
                                     </div>
@@ -129,7 +129,7 @@
                                 </div>
                             </div>
                             <div class="text-center">
-                                <button type="submit" class="btn btn-info btn-fill btn-wd">Update Room Type</button>
+                                <button type="submit" class="btn btn-info btn-fill btn-wd">Update Cafe</button>
                             </div>
                             <div class="clearfix"></div>
                             {!! Form::close() !!}

@@ -105,8 +105,8 @@
                 </div>
                 <div class="col-md-6">
                     <div class="head-typo typo-com collap-expand book-form inn-com-form">
-                        <h2>Sign up with Social Networks</h2>
-                        <p>Click any button and authorize to register using following social networks.</p>
+                        <h2>Daftar dengan Jejaring Sosial</h2>
+                        <p>Klik tombol apa saja dan izinkan untuk masuk menggunakan jejaring sosial berikut.</p>
                         <form class="col s12">
                             <div class="row">
                                 <div class="social-btn">

@@ -9,9 +9,9 @@
             <ul>
                 <li><a href="{{ url('/') }}">Home</a>
                 </li>
-                <li><a href="{{ url('/room_type') }}">Rooms</a>
+                <li><a href="{{ url('/room_type') }}">Info Cafe</a>
                 </li>
-                <li><a href="{{ url('/event') }}">Events</a>
+                <li><a href="{{ url('/event') }}">Promo</a>
                 </li>
                 <li><a href="{{ url('/food') }}">Food Menu</a>
                 </li>

@@ -19,7 +19,7 @@
                                 <th data-field="room_type" class="text-center">Type</th>
                                 <th data-field="booked_by" class="text-center">Booked By</th>
                                 <th data-field="status" data-sortable="true">Status</th>
-                                <th data-field="payment" data-sortable="true">Payment</th>
+                                <th data-field="payment" data-sortable="true">Pembayaran</th>
                                 <th data-field="actions" class="td-actions text-right">Actions
                                 </th>
                                 </thead>
@@ -50,9 +50,9 @@
                                                 </td>
                                                 <td>
                                                     @if($room_booking->payment == 1)
-                                                        <button class="btn btn-success btn-xs btn-fill">Paid</button>
+                                                        <button class="btn btn-success btn-xs btn-fill">Di Bayar</button>
                                                     @else
-                                                        <button class="btn btn-default btn-xs btn-fill">Not Paid
+                                                        <button class="btn btn-default btn-xs btn-fill">Belum Di Bayar
                                                         </button>
                                                     @endif
                                                 </td>

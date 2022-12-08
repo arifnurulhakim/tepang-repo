@@ -34,13 +34,13 @@
         <div class="container">
             <div class="row">
                 <div class="hom1-title">
-                    <h2>Our Hotel Rooms</h2>
+                    <h2>Gambaran Cafe Kami</h2>
                     <div class="head-title">
                         <div class="hl-1"></div>
                         <div class="hl-2"></div>
                         <div class="hl-3"></div>
                     </div>
-                    <p>Every hotel stay provides you with great experience and hospitality.</p>
+                    <p>Setiap datang dan book di tepang memberi Anda pengalaman dan keramahtamahan yang luar biasa.</p>
                 </div>
             </div>
             <div class="row">
@@ -82,13 +82,13 @@
         <div class="container">
             <div class="row">
                 <div class="hom1-title">
-                    <h2>Events</h2>
+                    <h2>Promo</h2>
                     <div class="head-title">
                         <div class="hl-1"></div>
                         <div class="hl-2"></div>
                         <div class="hl-3"></div>
                     </div>
-                    <p>Join events and conferences organized in our hotel.</p>
+                    <p>Bergabunglah dengan kami yang diselenggarakan di Tepang kami.</p>
                 </div>
             </div>
             <div class="row">
@@ -97,7 +97,7 @@
                     <div class="col-md-3 n2-event">
                         <!--event IMAGE-->
                         <div class="n21-event hovereffect"> <img src="{{'/storage/events/'.$event->image}}" alt="">
-                            <div class="overlay"> <a href="{{ url('/event/') }}"><span class="ev-book">Book Now</span></a> </div>
+                            <div class="overlay"> <a href="{{ url('/event/') }}"><span class="ev-book">Book Sekarang</span></a> </div>
                         </div>
                         <!--event DETAILS-->
                         <div class="n22-event"> <a href="{{ url('/event/') }}"><h4>{{ $event->name }}</h4></a> <span class="event-date">Date: {{ $event->date }},</span> <span class="event-by"> Price: {{ $event->price > 0? config('app.currency').$event->price : 'Free'}}</span>
@@ -133,7 +133,7 @@
                         <div class="hl-2"></div>
                         <div class="hl-3"></div>
                     </div>
-                    <p>View photos of hotel rooms, food menus and events</p>
+                    <p>Lihat foto cafe, menu makanan, dan acara</p>
                 </div>
             </div>
             <div class="row">
@@ -142,11 +142,11 @@
                         <ul id="filters" class="clearfix">
                             <li><span class="filter active" data-filter=".room, .facilities, .food, .event">All</span>
                             </li>
-                            <li><span class="filter" data-filter=".room">Rooms</span>
+                            <li><span class="filter" data-filter=".room">Info Cafe</span>
                             </li>
                             <li><span class="filter" data-filter=".food">Food Menu</span>
                             </li>
-                            <li><span class="filter" data-filter=".event">Events</span>
+                            <li><span class="filter" data-filter=".event">Promo</span>
                             </li>
                         </ul>
                         <div id="portfoliolist">
@@ -221,12 +221,12 @@
                         <h4>Video Gallery</h4>
                         <iframe src="{{config('app.video')}}?autoplay=0&amp;showinfo=0&amp;controls=0" allowfullscreen></iframe>
                         <h5>Introductory Video</h5>
-                        <p>Watch this video to learn more about our hotel facilities, luxuries and environment</p>
+                        <p>Tonton video ini untuk mempelajari lebih lanjut tentang fasilitas, kemewahan, dan lingkungan Cafe-Cafe kami</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="bot-gal h-blog">
-                        <h4>Latest Reviews</h4>
+                        <h4>Ulasan Terbaru</h4>
                         <ul>
                             @if(count($reviews) > 0)
                                 @foreach($reviews as $review)

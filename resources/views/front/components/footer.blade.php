@@ -8,15 +8,15 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-sm-12 col-md-3 foot-logo"> <img src="{{ asset("front/images/logo1.png") }}" alt="logo">
-                                        <p class="hasimg">Hotel Simbiosis provides cheap hotel reservation service.</p>
-                                        <p class="hasimg">The top-rated hotel reservation services.</p>
+                                        <p class="hasimg">Tepang menyediakan layanan Cafe murah.</p>
+                                        <p class="hasimg">Layanan reservasi Cafe-Cafe terbaik.</p>
                                     </div>
                                     <div class="col-sm-12 col-md-3">
                                         <h4>Support &amp; Help</h4>
                                         <ul class="two-columns">
-                                            <li><a href="{{ '/room_type' }}">Rooms</a>
+                                            <li><a href="{{ '/room_type' }}">Info Cafe</a>
                                             </li>
-                                            <li><a href="{{ '/event' }}">Events</a>
+                                            <li><a href="{{ '/event' }}">Promo</a>
                                             </li>
                                             <li><a href="{{ url('/food') }}">Food Menu</a>
                                             </li>
@@ -47,7 +47,7 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-sm-12 col-md-3">
-                                        <h4>Payment Options</h4>
+                                        <h4>Opsi Pembayaran</h4>
                                         <p class="hasimg"> <img src="{{ asset("front/images/payment.png") }}" alt="payment"> </p>
                                     </div>
                                     <div class="col-sm-12 col-md-4">
@@ -67,7 +67,7 @@
                                     </div>
                                     <div class="col-sm-12 col-md-5 foot-social">
                                         <h4>Follow with us</h4>
-                                        <p>Join the thousands of other people.</p>
+                                        <p>Bergabunglah dengan ribuan orang lainnya.</p>
                                         <ul>
                                             <li><a href="{{ config('app.facebook') }}"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
                                             <li><a href="{{ config('app.google') }}"><i class="fa fa-google-plus" aria-hidden="true"></i></a> </li>
@@ -88,7 +88,7 @@
     </footer>
     <section class="copy">
         <div class="container">
-            <p>copyrights © 2017 {{ config('app.name', "The Hotel Symbiosis") }}. &nbsp;&nbsp;All rights reserved. </p>
+            <p>copyrights © Tepang V.2 2022  {{ config('app.name', "Tepang") }}. &nbsp;&nbsp;All rights reserved. </p>
         </div>
     </section>
     @show

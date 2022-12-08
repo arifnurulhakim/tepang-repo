@@ -9,7 +9,7 @@
                 <div class="col-md-10 col-md-offset-1">
                     <div class="card">
                         <div class="header">
-                            <h4 class="title">Add Event to Menu</h4>
+                            <h4 class="title">Add Promo </h4>
                         </div>
                         <div class="content">
                             {!! Form::open(array('url' => 'admin/event/', 'id' => 'event-add-form', 'files' => true)) !!}
@@ -19,7 +19,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label>Event Name<star>*</star></label>
+                                        <label>Promo Name<star>*</star></label>
                                         <input type="text" name="name" class="form-control border-input"
                                                placeholder="Ex: Holi 2018" value="{{ old('name') }}">
                                     </div>
@@ -36,7 +36,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Price<star>*</star></label>
+                                        <label>Harga<star>*</star></label>
                                         <input type="text" name="price" class="form-control border-input"
                                                placeholder="Ex: 500" value="{{ old('price') }}">
                                     </div>
@@ -90,7 +90,7 @@
                                 </div>
                             </div>
                             <div class="text-center">
-                                <button type="submit" class="btn btn-info btn-fill btn-wd">Add Event
+                                <button type="submit" class="btn btn-info btn-fill btn-wd">Add Promo
                                 </button>
                             </div>
                             <div class="clearfix"></div>
