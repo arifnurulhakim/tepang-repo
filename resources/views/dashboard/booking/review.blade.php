@@ -35,7 +35,7 @@
                         @elseif($room_booking->review->approval_status == "rejected")
                             <span class="label label-danger">Rejected</span>
                         @else
-                            <span class="label label-default">Not reviewed yet</span>
+                            <span class="label label-default">Belum ditinjau</span>
                         @endif
                     @endif
                 </td>

@@ -28,8 +28,8 @@
                         @endif
                             <div class="row">
                                 <div class="col s12 avail-title">
-                                    <h4>Check Availability</h4>
-                                    <p>The final price is calculated by giving {{$room_type->discount_percentage}}% discount, adding {{config('app.service_charge_percentage')}}% service charge and adding {{config('app.vat_percentage')}}% VAT in the room's original price.</p>
+                                    <h4>Cek ketersediaan</h4>
+                                    <p>Tharga akhir dihitung dengan memberi {{$room_type->discount_percentage}}% discount, menambahkan {{config('app.service_charge_percentage')}}% biaya layanan dan menambahkan {{config('app.vat_percentage')}}% PPN dalam harga asli cafe.</p>
                                 </div>
                             </div>
                         <input name="booking_validation" type="hidden" value="0">
@@ -56,11 +56,11 @@
                                 </div>
                                 <div class="input-field col s12 m4 l2">
                                     <input type="text" id="from" name="arrival_date" value="{{ old('arrival_date') }}">
-                                    <label for="from">Arrival Date</label>
+                                    <label for="from">Tanggal kedatangan</label>
                                 </div>
                                 <div class="input-field col s12 m4 l2">
                                     <input type="text" id="to" name="departure_date" value="{{ old('departure_date') }}">
-                                    <label for="to">Departure Date</label>
+                                    <label for="to">Tanggal keberangkatan</label>
                                 </div>
                                 <div class="input-field col s12 m4 l2">
                                     <input type="submit" value="submit" class="form-btn">
@@ -80,7 +80,7 @@
                     <div class="row">
                         <div class="hp-section">
                             <div class="hp-sub-tit">
-                                <h4><span>{{ $room_type->name }}</span> Room</h4>
+                                <h4><span>{{ $room_type->name }}</span> Cafe</h4>
                             </div>
                             <div class="hp-amini">
                                 <p>{{ $room_type->description }}</p>
@@ -89,8 +89,8 @@
                         @if(count($room_type->facilities) > 0)
                         <div class="hp-section">
                             <div class="hp-sub-tit">
-                                <h4><span>Facilities</span></h4>
-                                <p>All of the following facilities comes with the room.</p>
+                                <h4><span>Fasilitas</span></h4>
+                                <p>Semua fasilitas berikut dilengkapi dengan kamar.</p>
                             </div>
                             <div class="hp-amini">
                                 <ul>
@@ -103,13 +103,13 @@
                         @endif
                         <div class="hp-section">
                             <div class="hp-sub-tit">
-                                <h4><span>Overview</span></h4>
-                                <p>Following the main features of the room</p>
+                                <h4><span>Ringkasan</span></h4>
+                                <p>Berikut fitur utama cafe</p>
                             </div>
                             <div class="hp-over">
                                 <ul class="nav nav-tabs hp-over-nav">
                                     <li class="active">
-                                        <a data-toggle="tab" href="#home"><img src="{{ asset("front/images/icon/a8.png") }}" alt=""> <span class="tab-hide">Overview</span>
+                                        <a data-toggle="tab" href="#home"><img src="{{ asset("front/images/icon/a8.png") }}" alt=""> <span class="tab-hide">Ringkasan</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -132,8 +132,8 @@
                         @if(count($room_type->images) > 0)
                         <div class="hp-section">
                             <div class="hp-sub-tit">
-                                <h4><span>Photo Gallery</span></h4>
-                                <p>View the actual room by following images.</p>
+                                <h4><span>Galeri foto</span></h4>
+                                <p>Lihat cafe yang sebenarnya dengan mengikuti gambar.</p>
                             </div>
                             <div class="">
                                 <div class="h-gal">
@@ -149,8 +149,8 @@
                         @endif
                         <div class="hp-section">
                             <div class="hp-sub-tit">
-                                <h4><span>Ratings</span></h4>
-                                <p>If you have good experience with the hotel, please leave a review to recommend others.</p>
+                                <h4><span>Peringkat</span></h4>
+                                <p>Jika Anda memiliki pengalaman yang baik , silakan tinggalkan ulasan untuk merekomendasikan orang lain.</p>
                             </div>
                             <div class="hp-review">
                                 <div class="hp-review-left">
@@ -195,7 +195,7 @@
                         <div class="hp-section">
                             <div class="hp-sub-tit">
                                 <h4><span>USER</span> REVIEWS</h4>
-                                <p>View all reviews from our customer regarding this room.</p>
+                                <p>Lihat semua ulasan dari pelanggan kami tentang kamar ini.</p>
                             </div>
                             <div class="lp-ur-all-rat">
                                 <ul>
@@ -225,19 +225,19 @@
                     <!--=========================================-->
                     <div class="hp-call hp-right-com">
                         <div class="hp-call-in"> <img src="{{ asset("front/images/icon/dbc4.png") }}" alt="">
-                            <h3><span>Call us!</span> {{ config('app.phone_number') }}</h3> <small>We are available 24/7 Monday to Sunday</small> <a href="#">Call Now</a> </div>
+                            <h3><span>Call us!</span> {{ config('app.phone_number') }}</h3> <small>Kami tersedia 24/7 Senin sampai Minggu</small> <a href="#">Call Now</a> </div>
                     </div>
                     <!--=========================================-->
                     <!--=========================================-->
                     <div class="hp-book hp-right-com">
                         <div class="hp-book-in">
-                            <a href="" id="bookmark_button" class="like-button"><i class="fa fa-heart-o"></i> Bookmark this listing</a> <!--<span>159 people bookmarked this place</span>-->
+                            <a href="" id="bookmark_button" class="like-button"><i class="fa fa-heart-o"></i> Tandai daftar ini</a> <!--<span>159 people bookmarked this place</span>-->
                             <ul>
-                                <li><a href="https://www.facebook.com/sharer.php?u={{ Request::url() }}" rel="me" title="Facebook" target="_blank"><i class="fa fa-facebook"></i> Share</a>
+                                <li><a href="https://www.facebook.com/sharer.php?u={{ Request::url() }}" rel="me" title="Facebook" target="_blank"><i class="fa fa-facebook"></i>acebook</a>
                                 </li>
                                 <li><a href="https://twitter.com/share?url={{ Request::url() }}&text={{ $room_type->name }}" rel="me" title="Twitter" target="_blank"><i class="fa fa-twitter"></i> Tweet</a>
                                 </li>
-                                <li><a href="https://plus.google.com/share?url={{ Request::url() }}" rel="me" title="Google Plus" target="_blank"><i class="fa fa-google-plus"></i> Share</a>
+                                <li><a href="https://plus.google.com/share?url={{ Request::url() }}" rel="me" title="Google Plus" target="_blank"><i class="fa fa-google-plus"></i>oogle</a>
                                 </li>
                             </ul>
                         </div>
@@ -246,7 +246,7 @@
                     <!--=========================================-->
                     <div class="hp-card hp-right-com">
                         <div class="hp-card-in">
-                            <h3>We Accept</h3> <img src="{{ asset("front/images/card.png") }}" alt=""> </div>
+                            <h3>Kami menerima</h3> <img src="{{ asset("front/images/card.png") }}" alt=""> </div>
                     </div>
                     <!--=========================================-->
                 </div>

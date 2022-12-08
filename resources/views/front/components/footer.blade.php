@@ -7,7 +7,7 @@
                         <div>
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-sm-12 col-md-3 foot-logo"> <img src="{{ asset("front/images/logo1.png") }}" alt="logo">
+                                    <div class="col-sm-12 col-md-3 foot-logo"> <img src="{{ asset("front/images/Logo_Tepang.png") }}" alt="logo" style="width:150px">
                                         <p class="hasimg">Tepang menyediakan layanan Cafe murah.</p>
                                         <p class="hasimg">Layanan reservasi Cafe-Cafe terbaik.</p>
                                     </div>
