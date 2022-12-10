@@ -27,7 +27,7 @@
                                         </ul>
                                     </div>
                                     <div class="col-sm-12 col-md-3">
-                                        <h4>Room Types</h4>
+                                        <h4>Cafe</h4>
                                         <ul class="two-columns">
                                             @foreach(\App\Model\RoomType::where('status', true)->orderBy('updated_at','desc')->limit('8')->get() as $room_type)
                                             <li><a href="{{ url('/room_type/'.$room_type->id) }}">{{ $room_type->name }}</a>

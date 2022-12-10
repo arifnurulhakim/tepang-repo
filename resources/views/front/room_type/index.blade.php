@@ -121,7 +121,7 @@
                         </div>
                         <!--ROOM PRICE-->
                         <div class="r4 r-com">
-                            <p>Price for 1 night</p>
+                            <p>Minimal harga Book</p>
                             <p><span class="room-price-1">5000</span> <span class="room-price">$: 7000</span>
                             </p>
                             <p>Non Refundable</p>

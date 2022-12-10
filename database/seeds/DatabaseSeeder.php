@@ -23,6 +23,6 @@ class DatabaseSeeder extends Seeder
         // $this->call(EventBookingsTableSeeder::class);
         // $this->call(RoomBookingsTableSeeder::class);
         // $this->call(ReviewsTableSeeder::class);
-        // $this->call(PagesTableSeeder::class);
+         $this->call(PagesTableSeeder::class);
     }
 }

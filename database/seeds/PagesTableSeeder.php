@@ -15,7 +15,7 @@ class PagesTableSeeder extends Seeder
         DB::table('pages')->insert([
             'title' => "About",
             'url_title' => 'about',
-            'description' => "Our Hotel is best among all.",
+            'description' => "Tepang is here",
             'status' => true,
             'created_at' => Carbon::now()->format('Y-m-d H:i:s')
         ]);
