@@ -56,7 +56,7 @@
                                 </div>
                                 <div class="input-field col s12 m4 l2">
                                     <input type="text" id="from" name="arrival_date" value="{{ old('arrival_date') }}">
-                                    <label for="from">Tanggal kedatangan</label>
+                                    <label for="from">Tanggal Book</label>
                                 </div>
                                 <div class="input-field col s12 m4 l2">
                                     <input type="text" id="to" name="departure_date" value="{{ old('departure_date') }}">

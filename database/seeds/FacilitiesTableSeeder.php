@@ -13,26 +13,27 @@ class FacilitiesTableSeeder extends Seeder
     public function run()
     {
         DB::table('facilities')->insert([
-            'name' => "Air Conditioner",
-            'icon' => "air_conditioner.png",
+            'name' => "Mushola",
+            'icon' => "Icon_Mushola.png",
+            'status' => true,
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s')
+           
+        ]);
+        DB::table('facilities')->insert([
+            'name' => "Room Meeting",
+            'icon' => "Icon_Room_Meeting.png",
             'status' => true,
             'created_at' => Carbon::now()->format('Y-m-d H:i:s')
         ]);
         DB::table('facilities')->insert([
-            'name' => "Bathtub",
-            'icon' => "bathtub.png",
+            'name' => "Tempat Sampah",
+            'icon' => "Icon_Tempat_Sampah.png",
             'status' => true,
             'created_at' => Carbon::now()->format('Y-m-d H:i:s')
         ]);
         DB::table('facilities')->insert([
-            'name' => "Breakfast",
-            'icon' => "breakfast.png",
-            'status' => true,
-            'created_at' => Carbon::now()->format('Y-m-d H:i:s')
-        ]);
-        DB::table('facilities')->insert([
-            'name' => "Computer",
-            'icon' => "computer.png",
+            'name' => "Wc Umum",
+            'icon' => "Icon_WC_Umum.png",
             'status' => true,
             'created_at' => Carbon::now()->format('Y-m-d H:i:s')
         ]);
