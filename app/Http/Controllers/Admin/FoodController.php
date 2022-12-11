@@ -50,7 +50,7 @@ class FoodController extends AdminController
         $rules = [
             'name' => 'required|max:100|unique:foods,name',
             'type' => 'required|in:Appetizer,Soup,Salad,Main Course,Dessert',
-            'image' => 'required|mimes:jpeg, jpg, png',
+            'image' => 'required',
             'price' => 'required|numeric|min:0',
             'description' => 'max:100',
             'status' => 'required|boolean'
@@ -116,7 +116,7 @@ class FoodController extends AdminController
         ];
 
         if ($request->hasFile('image')) {
-            $rules['image'] = 'mimes:jpeg,jpg,png';
+            $rules['image'];
         }
 
         $validator = Validator::make($request->all(), $rules);

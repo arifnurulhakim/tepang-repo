@@ -4,7 +4,7 @@
     <div class="mm">
         <div class="mm-inn">
             <div class="mm-logo">
-                <a href="main.html"><img src="{{ asset("front/images/logo.png") }}" alt="">
+                <a href="main.html"><img src="{{ asset("front/images/logo_putih_tepang.png") }}" alt=""style="width:150px">
                 </a>
             </div>
             <div class="mm-icon"><span><i class="fa fa-bars show-menu" aria-hidden="true"></i></span>
@@ -15,9 +15,9 @@
                 <ul>
                     <li><a href="{{ url('/') }}">Home</a>
                     </li>
-                    <li><a href="{{ url('/room_type') }}">Rooms</a>
+                    <li><a href="{{ url('/room_type') }}">Info Cafe</a>
                     </li>
-                    <li><a href="{{ url('/event') }}">Events</a>
+                    <li><a href="{{ url('/event') }}">Promo</a>
                     </li>
                     <li><a href="{{ url('/food') }}">Food Menu</a>
                     </li>

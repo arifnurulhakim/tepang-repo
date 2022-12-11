@@ -1135,7 +1135,7 @@ td {} .inn-com p {} .inn-com-form {} .inn-com-form form {
 .mm {
     display: none;
     position: fixed;
-    background: #1d2328;
+    background: #1A6046;
     width: 100%;
     z-index: 9999;
     padding: 10px;
@@ -1719,7 +1719,7 @@ td {} .inn-com p {} .inn-com-form {} .inn-com-form form {
     overflow: hidden;
     margin-top: 72px;
     margin-bottom: 55px;
-    background: linear-gradient(to top, #273237 14%, #f3354e 66%);
+    background: linear-gradient(to top, #273237 14%, #1A6046 66%);
 }
 .db-left {
     float: left;

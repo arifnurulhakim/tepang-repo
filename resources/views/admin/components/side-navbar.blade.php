@@ -1,5 +1,5 @@
 @section('side-navbar')
-    <div class="sidebar" data-background-color="brown" data-active-color="danger">
+    <div class="sidebar" data-background-color="brown" data-active-color="warning">
         <!--
             Tip 1: you can change the color of the sidebar's background using: data-background-color="white | brown"
             Tip 2: you can change the color of the active button using the data-active-color="primary | info | success | warning | danger"
@@ -70,7 +70,7 @@
                                 </a>
                                 <div @if (Request::is('admin/'.strtolower($item['name']).'/*')) class="collapse in" @else class="collapse" @endif id="componentsExamples">
                                     <ul class="nav">
-                                        <li @if (Request::is('admin/'.strtolower($item['name']).'/room_booking')) class="active" @endif><a href="{{ url($item['actions']['room_booking'])}}">Room Bookings</a></li>
+                                        <li @if (Request::is('admin/'.strtolower($item['name']).'/room_booking')) class="active" @endif><a href="{{ url($item['actions']['room_booking'])}}">Cafe Bookings</a></li>
                                         <li @if (Request::is('admin/'.strtolower($item['name']).'/event_booking')) class="active" @endif><a href="{{ url($item['actions']['event_booking'])}}">Event Bookings</a></li>
                                     </ul>
                                 </div>

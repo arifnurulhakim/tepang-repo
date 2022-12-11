@@ -65,6 +65,24 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <label>Link Maps</label>
+                                            <input type="text" name="link_maps" class="form-control border-input"
+                                                   placeholder="ex: www.facebook.com/the-royal-hotel" value="{{ old('link_maps') }}">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Link Text Maps</label>
+                                            <input type="text" name="link_textmaps" class="form-control border-input"
+                                                   placeholder="ex: Visit Now" value="{{ old('link_textmaps') }}">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
                                     <div class="form-group">
                                         <label>Status</label>
                                         <select name="status" id="status" class="form-control">

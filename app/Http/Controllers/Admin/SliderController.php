@@ -52,6 +52,8 @@ class SliderController extends AdminController
             'description' => 'max:200',
             'link' => 'max:100',
             'link_text' => 'max:15',
+            'link_maps' => 'max:1000',
+            'link_textmaps' => 'max:15',
             'status' => 'required|boolean'
         ];
 
@@ -72,6 +74,8 @@ class SliderController extends AdminController
             $slider->description = $request->input('description');
             $slider->link = $request->input('link');
             $slider->link_text = $request->input('link_text');
+            $slider->link_maps = $request->input('link_maps');
+            $slider->link_textmaps = $request->input('link_textmaps');
             $slider->status = $request->input('status');
 
             // Image Upload
@@ -132,6 +136,8 @@ class SliderController extends AdminController
             'description' => 'max:200',
             'link' => 'max:100',
             'link_text' => 'max:15',
+            'link_maps' => 'max:1000',
+            'link_textmaps' => 'max:15',
             'status' => 'required|boolean'
         ];
 
@@ -151,6 +157,9 @@ class SliderController extends AdminController
         $slider->big_title = $request->input('big_title');
         $slider->description = $request->input('description');
         $slider->link = $request->input('link');
+        $slider->link_text = $request->input('link_text');
+        $slider->link_maps = $request->input('link_maps');
+        $slider->link_textmaps = $request->input('link_textmaps');
         $slider->status = $request->input('status');
 
         if($request->hasFile('image')){

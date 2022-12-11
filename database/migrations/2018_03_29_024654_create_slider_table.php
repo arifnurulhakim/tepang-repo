@@ -21,6 +21,8 @@ class CreateSliderTable extends Migration
             $table->string('description', 200)->nullable();
             $table->string('link', 100)->nullable();
             $table->string('link_text', 15)->nullable();
+            $table->string('link_Maps', 100)->nullable();
+            $table->string('link_TextMaps', 15)->nullable();
             $table->boolean('status')->default(true);
             $table->timestamps();
         });

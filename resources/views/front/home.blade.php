@@ -12,7 +12,9 @@
                         <h5 class="light grey-text text-lighten-3">{{ $image->small_title }}</h5>
                         <h2>{{ $image->big_title }}</h2>
                         <p>{{ $image->description }}</p>
-                        <a href="{{ $image->link }}" class="waves-effect waves-light">{{ $image->link_text }}</a></div>
+                        <a href="{{ $image->link }}" class="waves-effect waves-light">{{ $image->link_text }}</a>
+                        <a href="{{ $image->link_maps }}" class="waves-effect waves-light">{{ $image->link_textmaps }}</a>
+                    </div>
                 </li>
                     @empty
                     <li> <img src="{{ asset("front/images/slider/1.jpg") }}" alt="">

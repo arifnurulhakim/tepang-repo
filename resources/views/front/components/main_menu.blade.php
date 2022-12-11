@@ -2,7 +2,7 @@
     <!--TOP SECTION-->
     <div class="row">
         <div class="logo">
-            <a href="{{ url('/') }}"><img src="{{ asset("front/images/Logo_Tepang.png") }}" alt="" style="width:150px"/>
+            <a href="{{ url('/') }}"><img src="{{ asset("front/images/logo_putih_tepang.png") }}" alt="" style="width:150px"/>
             </a>
         </div>
         <div class="menu-bar">
